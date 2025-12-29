@@ -1,6 +1,6 @@
 package projetojava1.executavel;
 
-public class resteRepository {
+public class testeRepository {
 	
 	public static void main(String[] args) {
 		System.out.println("Subindo novo projeto a partir de repositorio local -> remoto através de ECLIPSE 2025");
