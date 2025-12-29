@@ -7,7 +7,6 @@ public class Pessoa {
 	private int idade;
 	
 	//--------------------------------
-	
 	public String getNome() {
 		return nome;
 	}
@@ -17,7 +16,6 @@ public class Pessoa {
 	}
 	
 	//--------------------------------
-	
 	public int getIdade() {
 		return idade;
 	}
@@ -25,7 +23,6 @@ public class Pessoa {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	
 	//--------------------------------
 
 	public String getSobrenome() {
@@ -35,7 +32,6 @@ public class Pessoa {
 	public void setSobrenome(String sobrenome) {
 		this.sobrenome = sobrenome;
 	}
-	
 	//--------------------------------
 
 }
