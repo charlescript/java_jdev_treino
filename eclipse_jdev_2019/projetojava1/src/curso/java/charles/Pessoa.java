@@ -7,7 +7,6 @@ public class Pessoa {
 	private int idade;
 	
 	// ---------------------------------------
-	
 	public String getNome() {
 		return nome;
 	}
@@ -17,7 +16,6 @@ public class Pessoa {
 	}
 	
 	// ---------------------------------------
-	
 	public int getIdade() {
 		return idade;
 	}
@@ -27,17 +25,11 @@ public class Pessoa {
 	}
 	
 	// ---------------------------------------
-
-	
 	public String getSobrenome() {
 		return nome;
 	}
 	
 	public void setSobrenome(String sobrenome) {
 		this.sobrenome = sobrenome;
-	}
-	
-	// ---------------------------------------
-
-	
+	}	
 }
