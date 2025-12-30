@@ -1,0 +1,125 @@
+📚 Lista Limpa de Livros Citados por Fernando Ferreira
+Abaixo está a lista dos livros mencionados no vídeo, agrupada por área, sem os comentários de tempo ou conteúdo:
+
+1. Linux e Sistemas Operacionais
+Linux (Desenvolvimento do Kernel)
+
+Linux Embarcado
+
+Livro sobre Desenvolvimento de Programas no Linux
+
+Livro sobre Escrever Driver no Linux
+
+O Kernel do Linux
+
+Livro sobre Interface de Programação do Linux
+
+2. Eletrônica
+Análise de Circuitos (Volume 1 e Volume 2)
+
+Eletrônica (Clássicos do Malvino, Volume 1 e Volume 2)
+
+Dispositivos Eletrônicos (e seu livro de laboratório)
+
+Eletrônica de Potência
+
+Microeletrônica
+
+Projeto de Fonte Chaveada
+
+Livro sobre Amplificador Operacional (1)
+
+Livro sobre Amplificadores Operacionais (2)
+
+Livro de Amplificador Operacional (3)
+
+Livro sobre Interface de Microprocessador
+
+Livro sobre Desenvolvimento e Macetes para Produto (Autor: Jerry)
+
+3. Eletrônica Digital e Hardware
+Eletrônica Digital
+
+Livro sobre FPGA (1)
+
+Livro sobre FPGA (2)
+
+Livro sobre Microcontroladores (Fábio Pereira)
+
+Livros sobre Z80 (Par de livros)
+
+Livros sobre 8080/8085 (Software e Hardware)
+
+Livro de Exercícios em Assembly (8051)
+
+Livro sobre Criação de Games em Computadores Antigos
+
+Livro sobre MSP 430
+
+Livro sobre Cortex M3
+
+Livro sobre Cortex M0
+
+4. Humanas e Filosofia
+Aprendizagem Humana (Charles Catânia)
+
+Microfísica do Poder (Foucault)
+
+Crítica da Razão Pura (Kant)
+
+Os Dois Problemas Fundamentais da Teoria do Conhecimento (Popper)
+
+Além do Bem e do Mal (Nietzsche)
+
+Genealogia da Moral (Nietzsche)
+
+Elementos de Euclides
+
+Livro sobre a Liberdade, Necessidade e o Acaso
+
+Livro de Behaviorismo
+
+5. Programação e Computação
+C Python Internals
+
+Livro sobre 8080, 8085 e Z80 (Abordagem dos três processadores)
+
+Engenharia de Software (Sommerville)
+
+Livro de Engenharia de Software (Pressman)
+
+Livro sobre Linguagem Funcional (Joia da Computação)
+
+Redes de Computadores (Tannembaum)
+
+Conceitos de Linguagens de Programação
+
+Livro sobre Arquitetura e Organização de Computadores
+
+Livro sobre Modelos de Linguagem
+
+Livro de C++ (Boas práticas e Orientação a Objeto)
+
+Livro sobre TDD (Foco em Embarcados)
+
+Livro antigo de C (Macetes)
+
+Livro de Estrutura de Dados
+
+Livro de C++ com o título "Meu Preferido"
+
+6. Compiladores e Interpretação
+Livro de Compiladores e Interpretadores (1)
+
+Livro do Dragão (Compiladores, Clássico)
+
+Livro de Compiladores (2)
+
+Livro sobre Criação de Interpretadores e Máquina Virtual
+
+Livro sobre LLVM
+
+7. Dados e Algoritmos
+Análise de Dados (Fávero)
+
+A Arte da Programação de Computadores (Donald Knuth)
