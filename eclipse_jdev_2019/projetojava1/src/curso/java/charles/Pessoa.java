@@ -50,4 +50,12 @@ public class Pessoa {
 	}
 	
 	// ---------------------------------------	
+	
+	public Date getDataCadastro() {
+		return dataCadastro;
+	}
+	
+	public void setDataCadastro(Date dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
 }
