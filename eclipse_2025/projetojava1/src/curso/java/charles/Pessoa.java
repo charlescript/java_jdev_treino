@@ -9,6 +9,7 @@ public class Pessoa {
 	private int idade;
 	private Date dataNascimento;
 	private Date dataCadastro;
+	private int cpf;
 	
 	//--------------------------------
 
@@ -61,4 +62,13 @@ public class Pessoa {
 		this.dataCadastro = dataCadastro;
 	}
 
+	//-----------------------------------------
+
+	public int getCpf(){
+		return cpf;
+	}
+
+	public void setCpf(int cpf) {
+		this.cpf = cpf;
+	}
 }
