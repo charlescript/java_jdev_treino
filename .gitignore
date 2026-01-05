@@ -1,0 +1,15 @@
+#Eclipse workspace
+.metadata/
+
+# Eclipse project files
+.settings/
+.classpath
+.project
+
+#Java build
+bin/
+target/
+
+# OS
+.DS_Store
+Thumbs.db
