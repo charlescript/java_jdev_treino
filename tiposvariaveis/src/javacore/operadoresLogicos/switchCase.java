@@ -1,5 +1,7 @@
 package javacore.operadoresLogicos;
 
 public class switchCase {
-
+	public static void main(String[] args) {
+		
+	}
 }
