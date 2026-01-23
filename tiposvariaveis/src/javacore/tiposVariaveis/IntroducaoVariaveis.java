@@ -1,4 +1,4 @@
-package tiposvariaveis;
+package javacore.tiposVariaveis;
 
 public class IntroducaoVariaveis {
 	public static void main(String[] args) {

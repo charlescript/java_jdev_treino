@@ -1,4 +1,4 @@
-package tiposvariaveis;
+package javacore.tiposVariaveis;
 
 public class OperacoesNumerosInteiros {
 	

@@ -1,4 +1,4 @@
-package tiposvariaveis;
+package javacore.operadoresLogicos;
 
 public class OperacoesLogicasCondicionais {
 	public static void main(String[] args) {
