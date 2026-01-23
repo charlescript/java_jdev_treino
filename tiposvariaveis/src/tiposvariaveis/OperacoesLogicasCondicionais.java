@@ -27,5 +27,19 @@ public class OperacoesLogicasCondicionais {
 		saidaResultado = mediaAluno >= 70 ? "Aprovado" : mediaAluno >= 50 ? "Recuperação" : "Reprovado";
 		System.out.println("Aluno: " + saidaResultado);
 		
+		
+		/** Operações lógicas aninhadas: Operações dentro de operações*/		
+		System.out.println("\n--------------Operações lógicas aninhadas-----------------------");
+		mediaAluno = 35;
+		if(mediaAluno >= 50) {
+			if(mediaAluno >= 70) {
+				System.out.println("Aluno aprovado - Parabéns " + mediaAluno);
+			} else if(mediaAluno >= 50) {
+				System.out.println("Aluno recuperação. -> " + mediaAluno);				
+			}	
+		} else {
+			System.out.println("Aluno reprovado. -> " + mediaAluno);
+		}
+		
 	}
 }
