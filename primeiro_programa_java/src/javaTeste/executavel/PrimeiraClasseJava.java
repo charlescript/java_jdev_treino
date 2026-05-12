@@ -7,6 +7,7 @@ public class PrimeiraClasseJava {
         System.out.println("Não é o meu primeiro programa em Java");
         System.out.println("Java é orientado a objeto");
         System.out.println("Sincronizando IDE eclipse ao repositório remoto auth2");
+        System.out.println("Teste de sincronização local->remoto");
     }
 }
  
