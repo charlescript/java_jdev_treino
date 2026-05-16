@@ -14,8 +14,12 @@ public class Aluno {
 	private String dataMatricula;
 	private String nomeEscola;
 	private String serieMatriculado;
+	private double nota1;
+	private double nota2;
+	private double nota3;
+	private double nota4;
 	
-	//public Aluno() {}
+	public Aluno() {}
 	
 	public Aluno(String nome, int idade, String dataNascimento) {
 		this.setNome(nome);
@@ -125,11 +129,58 @@ public class Aluno {
 	
 	//-//////////////////////////////////
 	
+	public Double getNota1() {
+		return nota1;
+	}
+	
+	public void setNota1(double nota1) {
+		this.nota1 = nota1;
+	}
+	
+	//-//////////////////////////////////
+	
+	public Double getNota2() {
+		return nota2;
+	}
+	
+	public void setNota2(double nota2) {
+		this.nota2 = nota2;
+	}
+	
+	//-//////////////////////////////////
+	
+	public Double getNota3() {
+		return nota3;
+	}
+	
+	public void setNota3(double nota3) {
+		this.nota3 = nota3;
+	}
+	
+	//-//////////////////////////////////
+	
+	public Double getNota4() {
+		return nota4;
+	}
+	
+	public void setNota4(double nota4) {
+		this.nota4 = nota4;
+	}
+	
+	//-//////////////////////////////////
+	
+	public double mediaNota() {
+		return (nota1 + nota2 + nota3 + nota4) / 4;
+	}
+	
+	
 	public void retornaDados(){
 		JOptionPane.showMessageDialog(null,"Nome: "+ this.getNome() + 
 				"\nIdade: "+ this.getIdade() + 
 				"\nNascimento: "+ this.getDataNascimento() +
 				"\nRG: " + this.getRegistroGeral() + 
-				"\nCPF: " + this.getNumeroCpf());
+				"\nCPF: " + this.getNumeroCpf() +
+				"\nMedia: " + this.mediaNota());
 	}
+
 }
