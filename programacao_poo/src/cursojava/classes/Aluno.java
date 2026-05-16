@@ -205,6 +205,11 @@ public class Aluno {
 				"\nNascimento: "+ this.getDataNascimento() +
 				"\nRG: " + this.getRegistroGeral() + 
 				"\nCPF: " + this.getNumeroCpf() +
+				"\nPAI: " + this.getNomePai() +
+				"\nMÃE: " + this.getNomeMae() +
+				"\nData Matricula: " + this.getDataMatricula() +
+				"\nNome da escola: " + this.getNomeEscola() +
+				"\nSérie: " + this.getSerieMatriculado() +
 				"\nMedia: " + this.mediaNota() + 
 				"\nAprovação: " + this.getAlunoAprovado() +
 				"\nSituação: " + this.getAlunoAprovado2() );
