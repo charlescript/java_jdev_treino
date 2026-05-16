@@ -215,4 +215,18 @@ public class Aluno {
 				"\nSituação: " + this.getAlunoAprovado2() );
 	}
 
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
+				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
+				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
+				+ serieMatriculado + ", nota1=" + nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + ", nota4=" + nota4
+				+ ", getAlunoAprovado()=" + getAlunoAprovado() + ", getAlunoAprovado2()=" + getAlunoAprovado2() + "]";
+	}
+
+    
+	
+	
+	
+
 }

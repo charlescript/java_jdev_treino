@@ -8,6 +8,7 @@ public class PrimeiraClasseJava {
 	
 	public static void main(String[] args) {
 		
+		
 		String nome = JOptionPane.showInputDialog("Nome do aluno?");
 		String idade = JOptionPane.showInputDialog("Idade do aluno: ");
 		String dataNascimento = JOptionPane.showInputDialog("Data nascimento do aluno: ");
@@ -24,7 +25,6 @@ public class PrimeiraClasseJava {
 			notasAlunos[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite a "+ (i+1) + "º nota: "));
 		}
 		
-		/*Aluno aluno1 = new Aluno("Alex", 35, "10/10/1991");*/
 		Aluno aluno1 = new Aluno();
 		
 		aluno1.setNome(nome);
@@ -56,7 +56,9 @@ public class PrimeiraClasseJava {
 							"\nMedia: " + aluno1.mediaNota() +
 							"\nAprovação: " + aluno1.getAlunoAprovado() + 
 							"\nSituação: " + aluno1.getAlunoAprovado2() );
-
+		
+		System.out.println(aluno1.toString());
+		
 		
 	} /*  End method main */
 }
