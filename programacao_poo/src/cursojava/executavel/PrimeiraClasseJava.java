@@ -15,9 +15,9 @@ public class PrimeiraClasseJava {
 		aluno1.setDataNascimento("10/03/1995");
 		aluno1.setRegistroGeral("31.215.478-32");
 		aluno1.setNumeroCpf("123.456.789-00");
-		aluno1.setNota1(10);
+		aluno1.setNota1(9);
 		aluno1.setNota2(9);
-		aluno1.setNota3(8);
+		aluno1.setNota3(7);
 		aluno1.setNota4(9);
 		
 		aluno2.setNome("João 2");
@@ -41,13 +41,18 @@ public class PrimeiraClasseJava {
 		System.out.println("Nome: " +aluno1.getNome() + 
 							"\nIdade: " + aluno1.getIdade() +
 							"\nNacimento: " + aluno1.getDataNascimento() +
-							"\nMedia: " + aluno1.mediaNota());
+							"\nMedia: " + aluno1.mediaNota() +
+							"\nAprovação: " + aluno1.getAlunoAprovado() + 
+							"\nSituação: " + aluno1.getAlunoAprovado2() );
 		
 		System.out.println("-------------------------------");
 		
 		System.out.println("Nome: " +aluno2.getNome() + 
 				"\nIdade: " + aluno2.getIdade() +
 				"\nNacimento: " + aluno2.getDataNascimento() + 
-				"\nMedia: " + aluno2.mediaNota() );
-	}
+				"\nMedia: " + aluno2.mediaNota() + 
+				"\nAprovação: " + aluno2.getAlunoAprovado() +
+				"\nSituação: " + aluno2.getAlunoAprovado2());
+		
+	} /*  End method main */
 }

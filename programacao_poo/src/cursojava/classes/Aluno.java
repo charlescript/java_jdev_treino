@@ -14,10 +14,10 @@ public class Aluno {
 	private String dataMatricula;
 	private String nomeEscola;
 	private String serieMatriculado;
-	private double nota1;
-	private double nota2;
-	private double nota3;
-	private double nota4;
+	private double nota1 = 0;
+	private double nota2 = 0;
+	private double nota3 = 0;
+	private double nota4 = 0;
 	
 	public Aluno() {}
 	
@@ -174,13 +174,40 @@ public class Aluno {
 	}
 	
 	
+	public boolean getAlunoAprovado() {
+		double media = this.mediaNota();
+		if(media >= 7) {
+			return true;
+		}
+		return false;
+	}
+	
+	
+	
+	public String getAlunoAprovado2() {
+		double media = this.mediaNota();
+		if(media >= 5) {
+			if(media >= 7) {
+				return "Aprovado.";
+			} else {
+				return "Recuperação.";
+			}
+		} else {
+			return "Reprovado.";
+		}
+	}
+	
+	
+	
 	public void retornaDados(){
 		JOptionPane.showMessageDialog(null,"Nome: "+ this.getNome() + 
 				"\nIdade: "+ this.getIdade() + 
 				"\nNascimento: "+ this.getDataNascimento() +
 				"\nRG: " + this.getRegistroGeral() + 
 				"\nCPF: " + this.getNumeroCpf() +
-				"\nMedia: " + this.mediaNota());
+				"\nMedia: " + this.mediaNota() + 
+				"\nAprovação: " + this.getAlunoAprovado() +
+				"\nSituação: " + this.getAlunoAprovado2() );
 	}
 
 }
