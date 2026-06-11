@@ -20,9 +20,12 @@ public class PrimeiraClasseJava {
 		String nomeEscola = JOptionPane.showInputDialog("Nome da escola: ");
 		String periodoMatriculado = JOptionPane.showInputDialog("Período matriculado: ");
 		
+		
+		String[] disciplinas = new String[4];
 		double[] notasAlunos = new double[4];
 		for(int i = 0; i <= 3; i++) { 
-			notasAlunos[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite a "+ (i+1) + "º nota: "));
+			disciplinas[i] = JOptionPane.showInputDialog("Digite a " + (i+1) +"º disciplina: ");
+			notasAlunos[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota de " + disciplinas[i] +": "));
 		}
 		
 		Aluno aluno1 = new Aluno();
@@ -38,10 +41,15 @@ public class PrimeiraClasseJava {
 		aluno1.setNomeEscola(nomeEscola);
 		aluno1.setSerieMatriculado(periodoMatriculado);
 		
-		aluno1.setNota1(notasAlunos[0]);
-		aluno1.setNota2(notasAlunos[1]);
-		aluno1.setNota3(notasAlunos[2]);
-		aluno1.setNota4(notasAlunos[3]);
+		aluno1.getDisciplina().setDisciplina1(disciplinas[0]);
+		aluno1.getDisciplina().setDisciplina2(disciplinas[1]);
+		aluno1.getDisciplina().setDisciplina3(disciplinas[2]);
+		aluno1.getDisciplina().setDisciplina4(disciplinas[3]);
+		
+		aluno1.getDisciplina().setNota1(notasAlunos[0]);
+		aluno1.getDisciplina().setNota2(notasAlunos[1]);
+		aluno1.getDisciplina().setNota3(notasAlunos[2]);
+		aluno1.getDisciplina().setNota4(notasAlunos[3]);
 
 		aluno1.retornaDados();
 		
@@ -53,7 +61,8 @@ public class PrimeiraClasseJava {
 							"\nData Matricula: " + aluno1.getDataMatricula() +
 							"\nNome da escola: " + aluno1.getNomeEscola() +
 							"\nSérie: " + aluno1.getSerieMatriculado() +
-							"\nMedia: " + aluno1.mediaNota() +
+							"\nDisciplinas: " + aluno1.getDisciplina().getDisciplina1() + " / " + aluno1.getDisciplina().getDisciplina2() + " / " + aluno1.getDisciplina().getDisciplina3() + " / " + aluno1.getDisciplina().getDisciplina4() +
+							"\nMedia: " + aluno1.getDisciplina().mediaNota() +
 							"\nAprovação: " + aluno1.getAlunoAprovado() + 
 							"\nSituação: " + aluno1.getAlunoAprovado2() );
 		

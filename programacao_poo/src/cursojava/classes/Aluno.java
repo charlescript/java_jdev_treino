@@ -1,5 +1,7 @@
 package cursojava.classes;
 
+import java.util.Objects;
+
 import javax.swing.JOptionPane;
 
 public class Aluno {
@@ -14,11 +16,19 @@ public class Aluno {
 	private String dataMatricula;
 	private String nomeEscola;
 	private String serieMatriculado;
-	private double nota1 = 0;
-	private double nota2 = 0;
-	private double nota3 = 0;
-	private double nota4 = 0;
 	
+	Disciplina disciplina = new Disciplina();
+
+	public Disciplina getDisciplina() {
+		return disciplina;
+	}
+
+	public void setDisciplina(Disciplina disciplina) {
+		this.disciplina = disciplina;
+	}
+	
+	
+
 	public Aluno() {}
 	
 	public Aluno(String nome, int idade, String dataNascimento) {
@@ -30,6 +40,8 @@ public class Aluno {
 	/*Métodos Getters e Setters para acesso dos atributos privados*/
 	/*Set adicionado dados no atributo da instância em tempo de execução*/
 	/*Get recuperando dados do atributo da instância em tempo de execução*/
+	
+	
 	
 	
 	public void setNome(String nome) {
@@ -129,53 +141,10 @@ public class Aluno {
 	
 	//-//////////////////////////////////
 	
-	public Double getNota1() {
-		return nota1;
-	}
-	
-	public void setNota1(double nota1) {
-		this.nota1 = nota1;
-	}
-	
-	//-//////////////////////////////////
-	
-	public Double getNota2() {
-		return nota2;
-	}
-	
-	public void setNota2(double nota2) {
-		this.nota2 = nota2;
-	}
-	
-	//-//////////////////////////////////
-	
-	public Double getNota3() {
-		return nota3;
-	}
-	
-	public void setNota3(double nota3) {
-		this.nota3 = nota3;
-	}
-	
-	//-//////////////////////////////////
-	
-	public Double getNota4() {
-		return nota4;
-	}
-	
-	public void setNota4(double nota4) {
-		this.nota4 = nota4;
-	}
-	
-	//-//////////////////////////////////
-	
-	public double mediaNota() {
-		return (nota1 + nota2 + nota3 + nota4) / 4;
-	}
 	
 	
 	public boolean getAlunoAprovado() {
-		double media = this.mediaNota();
+		double media = disciplina.mediaNota();
 		if(media >= 7) {
 			return true;
 		}
@@ -185,7 +154,7 @@ public class Aluno {
 	
 	
 	public String getAlunoAprovado2() {
-		double media = this.mediaNota();
+		double media = disciplina.mediaNota();
 		if(media >= 5) {
 			if(media >= 7) {
 				return "Aprovado.";
@@ -210,23 +179,43 @@ public class Aluno {
 				"\nData Matricula: " + this.getDataMatricula() +
 				"\nNome da escola: " + this.getNomeEscola() +
 				"\nSérie: " + this.getSerieMatriculado() +
-				"\nMedia: " + this.mediaNota() + 
+				"\nMedia: " + disciplina.mediaNota() + 
 				"\nAprovação: " + this.getAlunoAprovado() +
 				"\nSituação: " + this.getAlunoAprovado2() );
 	}
+
+	
+	
+	
+
+	
 
 	@Override
 	public String toString() {
 		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
 				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
 				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
-				+ serieMatriculado + ", nota1=" + nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + ", nota4=" + nota4
-				+ ", getAlunoAprovado()=" + getAlunoAprovado() + ", getAlunoAprovado2()=" + getAlunoAprovado2() + "]";
+				+ serieMatriculado + ", disciplina=" + disciplina + "]";
+	}
+	
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(nome, numeroCpf);
 	}
 
-    
-	
-	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Aluno other = (Aluno) obj;
+		return Objects.equals(nome, other.nome) && Objects.equals(numeroCpf, other.numeroCpf);
+	}
+
 	
 
 }
