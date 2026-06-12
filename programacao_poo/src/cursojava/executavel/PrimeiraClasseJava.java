@@ -41,15 +41,7 @@ public class PrimeiraClasseJava {
 		aluno1.setNomeEscola(nomeEscola);
 		aluno1.setSerieMatriculado(periodoMatriculado);
 		
-		aluno1.getDisciplina().setDisciplina1(disciplinas[0]);
-		aluno1.getDisciplina().setDisciplina2(disciplinas[1]);
-		aluno1.getDisciplina().setDisciplina3(disciplinas[2]);
-		aluno1.getDisciplina().setDisciplina4(disciplinas[3]);
-		
-		aluno1.getDisciplina().setNota1(notasAlunos[0]);
-		aluno1.getDisciplina().setNota2(notasAlunos[1]);
-		aluno1.getDisciplina().setNota3(notasAlunos[2]);
-		aluno1.getDisciplina().setNota4(notasAlunos[3]);
+
 
 		aluno1.retornaDados();
 		

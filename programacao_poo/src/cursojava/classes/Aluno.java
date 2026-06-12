@@ -1,6 +1,8 @@
 package cursojava.classes;
 
 import java.util.Objects;
+import java.util.List;
+import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
@@ -17,17 +19,16 @@ public class Aluno {
 	private String nomeEscola;
 	private String serieMatriculado;
 	
-	Disciplina disciplina = new Disciplina();
-
-	public Disciplina getDisciplina() {
-		return disciplina;
-	}
-
-	public void setDisciplina(Disciplina disciplina) {
-		this.disciplina = disciplina;
+	private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+	
+	public List<Disciplina> getDisciplinas(){
+		return disciplinas;
 	}
 	
-	
+	public void setDisciplinas(List<Disciplina> disciplinas) {
+		this.disciplinas = disciplinas;
+	}
+ 
 
 	public Aluno() {}
 	
@@ -179,8 +180,7 @@ public class Aluno {
 				"\nData Matricula: " + this.getDataMatricula() +
 				"\nNome da escola: " + this.getNomeEscola() +
 				"\nSérie: " + this.getSerieMatriculado() +
-				"\nMedia: " + disciplina.mediaNota() + 
-				"\nAprovação: " + this.getAlunoAprovado() +
+				//"\nAprovação: " + this.getAlunoAprovado() +
 				"\nSituação: " + this.getAlunoAprovado2() );
 	}
 
@@ -195,7 +195,7 @@ public class Aluno {
 		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
 				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
 				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
-				+ serieMatriculado + ", disciplina=" + disciplina + "]";
+				+ serieMatriculado +"]";
 	}
 	
 
