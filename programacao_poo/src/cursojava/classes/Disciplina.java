@@ -23,12 +23,6 @@ public class Disciplina {
 		this.nota = nota;
 	}
 
-
-
-	public double mediaNota() {
-		return 0;
-	}
-	
 	
 	
 	@Override

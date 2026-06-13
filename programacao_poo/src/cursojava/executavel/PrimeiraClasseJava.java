@@ -2,12 +2,12 @@ package cursojava.executavel;
 
 import javax.swing.JOptionPane;
 import cursojava.classes.Aluno;
+import cursojava.classes.Disciplina;
 
 
 public class PrimeiraClasseJava {
 	
 	public static void main(String[] args) {
-		
 		
 		String nome = JOptionPane.showInputDialog("Nome do aluno?");
 		String idade = JOptionPane.showInputDialog("Idade do aluno: ");
@@ -19,16 +19,21 @@ public class PrimeiraClasseJava {
 		String dataMatricula = JOptionPane.showInputDialog("Data matricula: ");
 		String nomeEscola = JOptionPane.showInputDialog("Nome da escola: ");
 		String periodoMatriculado = JOptionPane.showInputDialog("Período matriculado: ");
-		
-		
-		String[] disciplinas = new String[4];
-		double[] notasAlunos = new double[4];
-		for(int i = 0; i <= 3; i++) { 
-			disciplinas[i] = JOptionPane.showInputDialog("Digite a " + (i+1) +"º disciplina: ");
-			notasAlunos[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota de " + disciplinas[i] +": "));
-		}
+		int qtDisciplina = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de disciplinas: "));
 		
 		Aluno aluno1 = new Aluno();
+		
+		for(int i = 1; i <= qtDisciplina; i++) { 
+			String disciplinaInserida = JOptionPane.showInputDialog("Digite a " + i +"º disciplina: ");
+			Double notaInserida = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota de " + disciplinaInserida +": "));
+						
+			Disciplina disciplina = new Disciplina();
+			disciplina.setDisciplina(disciplinaInserida);
+			disciplina.setNota(notaInserida);
+			
+			aluno1.getDisciplinas().add(disciplina);
+		}
+		
 		
 		aluno1.setNome(nome);
 		aluno1.setIdade(Integer.valueOf(idade));
@@ -41,8 +46,7 @@ public class PrimeiraClasseJava {
 		aluno1.setNomeEscola(nomeEscola);
 		aluno1.setSerieMatriculado(periodoMatriculado);
 		
-
-
+		
 		aluno1.retornaDados();
 		
 		System.out.println("Nome: " +aluno1.getNome() + 
@@ -53,12 +57,13 @@ public class PrimeiraClasseJava {
 							"\nData Matricula: " + aluno1.getDataMatricula() +
 							"\nNome da escola: " + aluno1.getNomeEscola() +
 							"\nSérie: " + aluno1.getSerieMatriculado() +
-							"\nDisciplinas: " + aluno1.getDisciplina().getDisciplina1() + " / " + aluno1.getDisciplina().getDisciplina2() + " / " + aluno1.getDisciplina().getDisciplina3() + " / " + aluno1.getDisciplina().getDisciplina4() +
-							"\nMedia: " + aluno1.getDisciplina().mediaNota() +
+							"\nDisciplinas: " + aluno1.getDisciplinas() +
+							"\nMedia: " + aluno1.mediaNota() +
 							"\nAprovação: " + aluno1.getAlunoAprovado() + 
 							"\nSituação: " + aluno1.getAlunoAprovado2() );
 		
 		System.out.println(aluno1.toString());
+		
 		
 		
 	} /*  End method main */

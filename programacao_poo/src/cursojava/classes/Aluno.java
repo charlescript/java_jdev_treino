@@ -142,10 +142,22 @@ public class Aluno {
 	
 	//-//////////////////////////////////
 	
+	public double mediaNota() {
+		
+		double somaNotas = 0.0;
+		
+		for(Disciplina disciplina : disciplinas) {
+			somaNotas += disciplina.getNota();
+		}
+		
+		return somaNotas / disciplinas.size();
+	}
+	
+	
 	
 	
 	public boolean getAlunoAprovado() {
-		double media = disciplina.mediaNota();
+		double media = mediaNota();
 		if(media >= 7) {
 			return true;
 		}
@@ -155,7 +167,7 @@ public class Aluno {
 	
 	
 	public String getAlunoAprovado2() {
-		double media = disciplina.mediaNota();
+		double media = mediaNota();
 		if(media >= 5) {
 			if(media >= 7) {
 				return "Aprovado.";
@@ -180,16 +192,12 @@ public class Aluno {
 				"\nData Matricula: " + this.getDataMatricula() +
 				"\nNome da escola: " + this.getNomeEscola() +
 				"\nSérie: " + this.getSerieMatriculado() +
-				//"\nAprovação: " + this.getAlunoAprovado() +
+				"\nAprovação: " + this.getAlunoAprovado() +
 				"\nSituação: " + this.getAlunoAprovado2() );
 	}
 
 	
 	
-	
-
-	
-
 	@Override
 	public String toString() {
 		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
